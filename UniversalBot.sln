@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGallery", "MGallery\MGalle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlCore", "CrawlCore\CrawlCore.csproj", "{0453BAD4-BE8C-4D96-90FA-B04B0D93FAA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractMGallery", "ExtractMGallery\ExtractMGallery.csproj", "{93B4480E-76F4-4632-A466-9998CB7EDBE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0453BAD4-BE8C-4D96-90FA-B04B0D93FAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0453BAD4-BE8C-4D96-90FA-B04B0D93FAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0453BAD4-BE8C-4D96-90FA-B04B0D93FAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B4480E-76F4-4632-A466-9998CB7EDBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B4480E-76F4-4632-A466-9998CB7EDBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B4480E-76F4-4632-A466-9998CB7EDBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B4480E-76F4-4632-A466-9998CB7EDBE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

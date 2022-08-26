@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ExtractMGallery": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\octo7\\source\\repos\\UniversalBot\\MGallery\\bin\\Release\\net6.0\\220827"
+    }
+  }
+}

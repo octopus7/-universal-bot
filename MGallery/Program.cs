@@ -1,7 +1,7 @@
 ﻿// */1 * * * * /home/pi/.dotnet/dotnet /home/pi/mgall/genshin/MGallery.dll
 
 string gallid = "onshinproject";
-string urlMain = $"https://gall.dcinside.com/mgallery/board/lists?id={gallid}";
+string urlMain = $"https://gall.dcinside.com/mgallery/board/lists/?id={gallid}";
 string urlRecommend = $"https://gall.dcinside.com/mgallery/board/lists?id={gallid}&exception_mode=recommend";
 
 HttpClient client = new HttpClient();
@@ -26,10 +26,13 @@ if (assembly != null)
     if (!Directory.Exists(exePath)) Directory.CreateDirectory(exePath);
     Directory.SetCurrentDirectory(exePath);
 
-    string? htmlMain = await client.GetStringAsync(urlMain);
+    //string? 
     string? htmlRecommend = await client.GetStringAsync(urlRecommend);
 
-    File.WriteAllText("m_" + time + ".htm", htmlMain);
+    for(int page = 1; page<=4; page++)
+    {
+        File.WriteAllText($"m_{time}_{page}.htm", await client.GetStringAsync($"{urlMain}&page={page}"));
+    }    
     File.WriteAllText("r_" + time  + ".htm", htmlRecommend);
 }
 
