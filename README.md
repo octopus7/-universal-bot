@@ -1,2 +1,2 @@
-# -universal-bot
+# universal-bot
 dotnet bot for rpi
